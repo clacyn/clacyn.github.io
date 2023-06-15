@@ -143,7 +143,7 @@ fetch('https://ipwho.is/?lang=en')
     response.json().then(
         d=> {
             ip_addr = d['ip'];
-            ip_country_code = d["continent_code"];
+            ip_country_code = d["country_code"];
             update_all_product();
             console.log(d);
         });
