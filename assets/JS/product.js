@@ -136,13 +136,14 @@ function update_all_product() {
 }
 
 
-fetch('http://ip-api.com/json/?fields=57347')
+// fetch('http://ip-api.com/json/?fields=57347')
+fetch('https://ipwho.is/?lang=en')
   .then(response => {
     console.log("Res :-")
     response.json().then(
         d=> {
-            ip_addr = d['query'];
-            ip_country_code = d["countryCode"];
+            ip_addr = d['ip'];
+            ip_country_code = d["continent_code"];
             update_all_product();
             console.log(d);
         });
