@@ -97,8 +97,8 @@ products_list = {
                 "Default" : "$80"
             },
             "price" : {
-                "IN" : "Rs 250",
-                "Default" : "$5"
+                "IN" : "Rs 399",
+                "Default" : "$8"
             },
             "img" : "./assets/images/youtube-premium-01.jpg",
             "whatsapp" : {
